@@ -85,13 +85,27 @@ app.post('/api/notes', (req, res) => {
       res.json('Error in posting note');
     }
   });
-// const saveNote = (note) =>
-//   fetch('/api/notes', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(note),
+
+//   app.delete('/api/notes/:note_id', (req, res) => {
+//     let note
+//     const notes =  fs.readFile("./db/db.json/", 'utf8', (err, data) => {
+//         if (err) {
+//           console.error(err);
+//         } else {
+//             console.log(data);
+//             note = JSON.parse(data);
+//             console.log(JSON.parse(data));
+//           return JSON.parse(data)
+//         }
+//       });
+//       console.log(note);
+//     for (var i = 0; i < notes.length; i++) {
+//         var obj = notes[i];
+    
+//         if (listToDelete.indexOf(obj.id) !== -1) {
+//             arrayOfObjects.splice(i, 1);
+//         }
+//     }
 //   });
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
