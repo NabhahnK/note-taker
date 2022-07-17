@@ -86,17 +86,20 @@ app.post('/api/notes', (req, res) => {
     }
   });
 
-//   fs.readFile("./db/dn.json", "utf8", (err, data) => {
-
-//   })
-//   app.delete('/api/notes/:note_id', (req, res) => {
-//       console.log(DELETE note);
-//     for (var i = 0; i < notes.length; i++) {
-//         var obj = notes[i];
-    
-//         if (listToDelete.indexOf(obj.id) !== -1) {
-//             arrayOfObjects.splice(i, 1);
+//   app.delete('/api/notes/:id', (req, res) => {
+//     if (req.body && req.params.id) {
+//       console.info(`${req.method} request received to delete a note`);
+//       const noteId = req.params.id;
+//       console.log(JSON.parse(req.body));
+//       for (let i = 0; i < req.body.length; i++) {
+//         const currentNote = req.body[i];
+//         if (currentNote.id === noteId) {
+          
+//           res.status(200).json(`New upvote count is: ${currentReview.upvotes}!`);
+//           return;
 //         }
+//       }
+//       res.status(404).json('Review ID not found');
 //     }
 //   });
 
