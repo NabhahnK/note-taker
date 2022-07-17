@@ -1,10 +1,6 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
-        "title": "sadfdsf",
-        "text": "sdfdsf"
+        "title":"Test Title",
+        "text":"Test text"
     }
 ]
