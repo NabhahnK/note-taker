@@ -86,19 +86,11 @@ app.post('/api/notes', (req, res) => {
     }
   });
 
+//   fs.readFile("./db/dn.json", "utf8", (err, data) => {
+
+//   })
 //   app.delete('/api/notes/:note_id', (req, res) => {
-//     let note
-//     const notes =  fs.readFile("./db/db.json/", 'utf8', (err, data) => {
-//         if (err) {
-//           console.error(err);
-//         } else {
-//             console.log(data);
-//             note = JSON.parse(data);
-//             console.log(JSON.parse(data));
-//           return JSON.parse(data)
-//         }
-//       });
-//       console.log(note);
+//       console.log(DELETE note);
 //     for (var i = 0; i < notes.length; i++) {
 //         var obj = notes[i];
     
